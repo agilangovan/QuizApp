@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="presidential_quiz_header">Presidential Quiz</string>
+    <string name="edit_text_hint">Name (Required)</string>
+    <string name="Instructions">Answer all five questions and don\'t forget your name. Good luck!</string>
+
+
+   <!--Question 1-->
+    <string name="question_1">1. Who was the first Vice-President of the United States? (Spelling counts!)</string>
+    <string name="john_adams">John Adams</string>
+
+    <!--Question 2-->
+    <string name="question_2">2. Which of the following were not the first President of Mexico?(Select all that apply)</string>
+    <string name="q2o1">José María Morelos</string>
+    <string name="q2o2">Guadalupe Victoria</string>
+    <string name="q2o3">Vicente Guerrero</string>
+    <string name="q2o4">Miguel Domínguez</string>
+
+    <!--Question 3-->
+    <string name="question_3">3. Who were the first three presidents of India?(Select all that apply)</string>
+    <string name="q3o1">Sarvepalli Radhakrishnan</string>
+    <string name="q3o2">Varahagiri Venkata Giri</string>
+    <string name="q3o3">Rajendra Prasad</string>
+    <string name="q3o4">Zakir Husain</string>
+
+    <!--Question 4-->
+    <string name="question_4">4. How many people have served as the President of the United States?</string>
+    <string name="q4o1">43</string>
+    <string name="q4o2">45</string>
+    <string name="q4o3">42</string>
+    <string name="q4o4">44</string>
+
+    <!--Question 5-->
+    <string name="question_5">5. Which of the following is not the annual salary of the President of the United States in U.S. dollars?(Select all that apply)</string>
+    <string name="q5o1">500,000</string>
+    <string name="q5o2">400,000</string>
+    <string name="q5o3">800,000</string>
+    <string name="q5o4">700,000</string>
+
+
+    <string name="submit_buton">SUBMIT</string>
+    <string name="grade_buton">GRADE</string>
+    <string name="retake_button">RE-TAKE</string>
+    <string name="results">RESULTS</string>
+
+
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Incorrect! The correct answer is</string>
+    <string name="incorrect_checkBox">Incorrect! The correct answers are</string>
+
+
+</resources>

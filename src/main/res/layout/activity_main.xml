@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.com.example.android.quizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/presidential_quiz_header"
+            android:layout_gravity="center"
+            android:textSize="32sp"/>
+
+        <EditText
+            android:id="@+id/name_edit_text"
+            android:layout_marginTop="20dp"
+            android:hint="@string/edit_text_hint"
+            android:layout_marginBottom="32dp"
+            style="@style/editTextTheme"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Instructions"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="32dp"/>
+
+        <!--Question 1-->
+        <TextView
+            android:text="@string/question_1"
+            style="@style/questionTheme"/>
+
+        <EditText
+            android:id="@+id/question_1_edit_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            style="@style/editTextTheme"/>
+
+        <!--Question 2-->
+        <TextView
+            android:layout_marginTop="16dp"
+            android:text="@string/question_2"
+            style="@style/questionTheme"/>
+
+        <CheckBox
+            android:id="@+id/q2o1"
+            android:text="@string/q2o1"
+            style="@style/checkBoxTheme"/>
+
+        <CheckBox
+            android:id="@+id/q2o2"
+            android:text="@string/q2o2"
+            style="@style/checkBoxTheme"/>
+
+        <CheckBox
+            android:id="@+id/q2o3"
+            android:text="@string/q2o3"
+            style="@style/checkBoxTheme"/>
+
+        <CheckBox
+            android:id="@+id/q2o4"
+            android:text="@string/q2o4"
+            style="@style/checkBoxTheme"/>
+
+        <!--Question 3-->
+        <TextView
+            android:layout_marginTop="16dp"
+            android:text="@string/question_3"
+            style="@style/questionTheme"/>
+
+        <CheckBox
+            android:id="@+id/q3o1"
+            android:text="@string/q3o1"
+            style="@style/checkBoxTheme"/>
+
+        <CheckBox
+            android:id="@+id/q3o2"
+            android:text="@string/q3o2"
+            style="@style/checkBoxTheme"/>
+
+        <CheckBox
+            android:id="@+id/q3o3"
+            android:text="@string/q3o3"
+            style="@style/checkBoxTheme"/>
+
+        <CheckBox
+            android:id="@+id/q3o4"
+            android:text="@string/q3o4"
+            style="@style/checkBoxTheme"/>
+
+        <!--Question 4-->
+        <TextView
+            android:layout_marginTop="16dp"
+            android:text="@string/question_4"
+            style="@style/questionTheme"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myRadioGroup">
+            <RadioButton
+                android:id="@+id/q4o1"
+                android:text="@string/q4o1"
+                style="@style/radioButtonTheme" />
+
+            <RadioButton
+                android:id="@+id/q4o2"
+                android:text="@string/q4o2"
+                style="@style/radioButtonTheme"/>
+
+            <RadioButton
+                android:id="@+id/q4o3"
+                android:text="@string/q4o3"
+                style="@style/radioButtonTheme"/>
+
+            <RadioButton
+                android:id="@+id/q4o4"
+                android:text="@string/q4o4"
+                style="@style/radioButtonTheme"/>
+        </RadioGroup>
+        <!--Question 5-->
+        <TextView
+            android:layout_marginTop="16dp"
+            android:text="@string/question_5"
+            style="@style/questionTheme"/>
+
+        <CheckBox
+            android:id="@+id/q5o1"
+            android:text="@string/q5o1"
+            style="@style/checkBoxTheme"/>
+
+        <CheckBox
+            android:id="@+id/q5o2"
+            android:text="@string/q5o2"
+            style="@style/checkBoxTheme"/>
+
+        <CheckBox
+            android:id="@+id/q5o3"
+            android:text="@string/q5o3"
+            style="@style/checkBoxTheme"/>
+
+        <CheckBox
+            android:id="@+id/q5o4"
+            android:text="@string/q5o4"
+            style="@style/checkBoxTheme"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+            <Button
+                android:id="@+id/submit_button"
+                style="@style/CustomButtonStyle"
+                android:text="@string/submit_buton"
+                android:onClick="submitQuiz"
+                android:layout_marginLeft="16dp"
+                android:layout_alignParentLeft="true"/>
+
+            <Button
+                android:id="@+id/grade_button"
+                style="@style/CustomButtonStyle"
+                android:text="@string/grade_buton"
+                android:layout_centerHorizontal="true"
+                android:onClick="gradeQuiz"/>
+
+            <Button
+                android:id="@+id/retake_button"
+                style="@style/CustomButtonStyle"
+                android:text="@string/retake_button"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentRight="true"
+                android:onClick="retakeQuiz"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/results_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+</ScrollView>
